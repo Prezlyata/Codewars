@@ -2,6 +2,9 @@ function prefill(n, v) {
 	let arrRez = [];
 	let check = NaN;
 	let error = new Error();
+	if(n == 0){
+		return []
+	}
 	for(let i= 0; i<n; i++){
 		arrRez.push(v)
 	}
@@ -11,4 +14,4 @@ function prefill(n, v) {
 		return arrRez
 	}
 }
-console.log(prefill("ds", 1))
+console.log(prefill(0, 1))
